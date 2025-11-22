@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class MyConfig {
 
     // Commenté pour tester Spring MVC
-    //@Bean
+    @Bean
     public ResourceConfig resourceConfig() {
         ResourceConfig jerseyServlet = new ResourceConfig();
         jerseyServlet.register(CompteJAXRSAPI.class);
